@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Soter">
+    <title>@Soterarwakon_-71231012-About me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+     Welcome To My Personal Web Page
+     
+    </header>
+    About me
+    <section id="foto">
+            <img src="Soter.png" alt="Soter" widht="100">
+            <img src="foto keluarga" alt="Soter" widht="100">
+
+
+    </section>
+    <section id="abaut me">
+        <h1>Jules Soteria Patrice Yakob Pao</h1>
+        <h1>@Soterarwakon_</h1>
+        <h1>Biak,Papua, Indonesia</h1>
+        <h1>Duta Wacana Christian University </h1>
+    </section>
+    <section id="keterampilan">
+        <ol>
+            <li>css</li>
+            <li>html</li>
+            <li>javascript</li>
+            <li>C</li>
+            <li>Python</li>
+        </ol>
+    </section>
+    
+    <button id="tombolGantiWarna">tombol ganti warna</button>
+
+    <footer>
+    
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue','green', 'white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
+        tombolGantiWarna.addEventListener("click",gantiWarnaRandom);
+    </script>
+</body>
+</html>
